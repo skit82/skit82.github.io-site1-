@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<title>Заказы клиентов</title>
+</head>
+<body>
+	<div class="container">
+		<div class="container__wrapper">
+			<sidebar class="admin-menu">
+				<a href="index.html" class="logo">
+					<img src="img/logo-panel.png" width="173" height="75" alt="Логотип" class="logo__img">
+					<p>
+						Панель управления сайтом
+					</p>
+				</a>
+				<div class="admin-menu__box">
+					<ul class="admin-menu__box-list">
+						<li class="admin-menu__box-item">
+							<a href="index.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--main">
+									<p>Главная страница</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="dish.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--menus">
+									<p>Меню</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="stock.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--stocks">
+									<p>Акции</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="manager.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--menager">
+									<p>Менеджеры</p>
+								</div>
+							</a></li>
+						<li class="admin-menu__box-item">
+							<a href="" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--order">
+									<p>Список заказов</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</sidebar>
+			<div class="container__inner">
+				<header class="header__user">
+					<ul class="header__user--list">
+						<li class="header__user--item">
+							<a href="" class="header__user--admin">
+								Вы вошли как Администратор
+							</a>
+						</li>
+						<li class="header__user--item">
+							<a href="" class="header__user--exit">
+								Выход
+							</a>
+						</li>
+					</ul>
+				</header>
+				<main>
+					<form action="" class="form-main form-main--customer">
+						<div class="form__wrapper">
+							<button type="sabmit" class="form__btn">
+								Сохранить
+							</button>
+							<div class="customer__wrapper">
+								<div class="customer__caption">
+									<h2 class="customer__caption-title">
+										Список заказов
+									</h2>
+									<!-- <a href="reservation.html" class="customer__caption-link"> -->
+										<!-- Сортировать заказы -->
+									<!-- </a> -->
+								</div>
+								<div class="custumer__block">
+									 <div class="custumer__name">
+									 		<div class="custumer__filter">
+							          <div class="custumer__filter-item custumer__filter-item--number">
+							          	<div class="filter-container">
+								            <a class="custumer__filter-ref" href="">
+								            	Номер заказа
+								          	</a>
+								            <div  class="custumer__filter-calendar ">
+								            	<label><img class="calendar-img"  src="img/small-calendar.svg" width="25" height="25" alt=""></label>
+								            	<input class="calendar-input" type="text" id="datepicker">
+								            </div>
+								          </div>
+							          </div>
+							          <div class="custumer__filter-item custumer__filter-item--data">
+							          	<div class="filter-container">
+							            <a class="custumer__filter-ref" href="">Время подачи</a>
+								             <div  class="custumer__filter-time">
+									            	<label><img class="time-img"  src="img/clock.svg" width="25" height="25" alt=""></label>
+									            	<input class="time-input" type="time" name="time" id="timepicker">
+									            </div>
+									          </div>
+							          </div>
+							          <!-- <div class="custumer__filter-item custumer__filter-item--summ"> -->
+							            <!-- <a>Сумма заказа</a> -->
+							          <!-- </div> -->
+							          <div class="custumer__filter-item custumer__filter-item--stata">
+							            <div class="custumer__filter-select">
+														<select name="select">
+							        				<option selected="selected">
+							        					Статус заказа
+							        				</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+						        				</select>
+													</div>
+							          </div>
+							          <div class="custumer__filter-item custumer__filter-item--btn">
+							          	<a href="reservation.html" class="custumer__filter-link">
+							          		Сортировать
+							          	</a>
+							          </div>
+							        </div>
+							        <div class="custumer__list">
+							          <div class="custumer__list-item custumer__list-item--number">
+							            <a>Номер заказа</a>
+							          </div>
+							          <div class="custumer__list-item custumer__list-item--name">
+							            <a>ФИО</a>
+							          </div>
+							          <div class="custumer__list-item custumer__list-item--data">
+							            <a>Время подачи</a>
+							          </div>
+							          <div class="custumer__list-item custumer__list-item--price">
+							            <a>Сумма заказа </a>
+							          </div>
+							          <div class="custumer__list-item custumer__list-item--status">
+							          </div>
+							        </div>
+        							<div class="custumer__box custumer__box--odd">
+							          <div class="custumer__numbed">
+							            <a>134 567</a>
+							          </div>
+							          <div class="custumer__named">
+							            <a>Никитин Сергей</a>
+							          </div>
+							          <div class="custumer__date">
+							            Сегодня в 12:45     
+							          </div>
+							          <div class="custumer__count">
+							            <p>1  450 руб.</p>     
+							          </div>
+							          <div class="custumer__orders">
+							            <div class="custumer__orders-select">
+														<select name="select">
+							        				<option selected="selected">
+							        					Сформирован,
+							        					оплачен
+							        				</option>
+															<option>Не оплачен</option>
+															<option>Сформирован </option>
+															<option>Выдан</option>
+															<option>...</option>
+						        				</select>
+													</div>
+							          </div>
+        							</div>
+        							<div class="custumer__box custumer__box--odd">
+							          <div class="custumer__numbed">
+							            <a>134 567</a>
+							          </div>
+							          <div class="custumer__named">
+							            <a>Никитин Сергей</a>
+							          </div>
+							          <div class="custumer__date">
+							            Сегодня в 12:45     
+							          </div>
+							          <div class="custumer__count">
+							            <p>1  450 руб.</p>     
+							          </div>
+							          <div class="custumer__orders">
+							            <div class="custumer__orders-select">
+														<select name="select">
+							        				<option selected="selected">
+							        					Сформирован,
+							        					оплачен
+							        				</option>
+															<option>Не оплачен</option>
+															<option>Сформирован </option>
+															<option>Выдан</option>
+															<option>...</option>
+						        				</select>
+													</div>
+							          </div>
+        							</div>
+        						</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</main>
+				<div class="popup-fade">
+    			<div class="popup">
+        		<a class="popup-close" href="#">
+        			<img src="img/icon-clouse.png" width="13" height="13" alt="Закрыть">
+        		</a>
+        		<form action="" class="form-redact">
+        			<h2 class="form-redact__title">
+        				Добавить/редактировать  менеджера
+        			</h2>
+        			<label>
+        				<input class="form-redact__input" type="text" name="name" placeholder="Фамилия Имя Отчество">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер телефона">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="email" name="email" placeholder="E-mail">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="password" name="password" placeholder="Пароль">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="password" name="password" placeholder="Повторите пароль">
+        			</label>
+        			<a href="" class="form-redact__link">
+        				Сохранить
+        			</a>
+        			<div class="form-redact__inner">
+        				<button class="form-redact__cancel">
+        					Отменить
+        				</button>
+        				<button class="form-redact__remove">
+        					Удалить
+        				</button>
+        			</div>
+        		</form>
+    		</div>        
+			</div>
+			</div>
+		</div>
+	</div>
+	<script  src="jquery/jquery-3.0.0.min.js"></script>
+	<script src="jquery/jquery-ui.min.js"></script>
+	<script src="js/datepicker-ru.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
